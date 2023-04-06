@@ -48,6 +48,9 @@ class Room(object):
         self.corner = np.array(
             [[self.c1x, self.c1y], [self.c2x, self.c2y], [self.c3x, self.c3y], [self.c4x, self.c4y], ]).T
 
+    def get_dim(self):
+        return self.c1x, self.c1y, self.hight
+
     def get_corner(self):
         return self.corner
 
